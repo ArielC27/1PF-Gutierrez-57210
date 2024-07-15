@@ -1,9 +1,11 @@
 <div class="alumnos-container">
   <h2>Lista de Alumnos</h2>
-  <ul>
+  <app-list [displayedColumns] = "displayedColumns"
+   [dataSource] = "dataSource"></app-list>
+  <!-- <ul>
     <li *ngFor="let alumno of alumnos">
       {{ alumno.Nombre }} {{ alumno.Apellido }} - {{ alumno.Edad }} -
       {{ alumno.Domicilio }} - {{ alumno.Telefono }} - {{ alumno.Email }}
     </li>
-  </ul>
+  </ul> -->
 </div>
